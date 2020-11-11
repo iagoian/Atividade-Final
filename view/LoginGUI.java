@@ -1,6 +1,5 @@
 package view;
 
-
 import java.awt.EventQueue;
 
 import javax.swing.JButton;
@@ -13,6 +12,8 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.JLabel;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class LoginGUI extends JFrame {
 	public LoginGUI() {
@@ -40,10 +41,19 @@ public class LoginGUI extends JFrame {
 		textField_1.setColumns(10);
 		
 		JButton btnNewButton_1 = new JButton("LIMPAR");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_1.setBounds(129, 211, 89, 23);
 		getContentPane().add(btnNewButton_1);
 		
+		
 		JButton btnNewButton_2 = new JButton("ENTRAR");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_2.setBounds(239, 211, 89, 23);
 		getContentPane().add(btnNewButton_2);
 	}
@@ -58,15 +68,13 @@ public class LoginGUI extends JFrame {
 	/*
 	 * Lauch the aplication.
 	 */
-	
-	public static void main(String[] args) {
-		
-		EventQueue.invokeLater(new Runnable) {
-			public void run() {
-				
-			}
+
+	public class Handler implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
 			
 		}
-		
 	}
 }

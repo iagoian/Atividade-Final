@@ -15,6 +15,8 @@ import javax.swing.JComboBox;
 import javax.swing.JEditorPane;
 import javax.swing.JSpinner;
 import javax.swing.DefaultComboBoxModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class MedicoGUI extends JFrame {
 	public MedicoGUI() {
@@ -71,10 +73,18 @@ public class MedicoGUI extends JFrame {
 		textField_6.setColumns(10);
 		
 		JButton btnNewButton_1 = new JButton("LIMPAR");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_1.setBounds(105, 413, 89, 23);
 		getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("ENVIAR");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_2.setBounds(236, 413, 89, 23);
 		getContentPane().add(btnNewButton_2);
 		
